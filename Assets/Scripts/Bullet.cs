@@ -8,6 +8,9 @@ public class Bullet : MonoBehaviour
     public float speed;
     public Score score_ref;
     public Spawn nombre_ennemi_ref;
+
+    public GameObject explosion;
+    public Transform parent;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,10 @@ public class Bullet : MonoBehaviour
     {
         nombre_ennemi_ref.nombre_ennemi--;
         score_ref.score_joueur++;
+        if (collision.gameObject.tag == "ennemi")
+        {
+            Instantiate(explosion, parent.position +Vector3.right * 0.5f, parent.rotation);
+        }
         Destroy(collision.gameObject);
         Destroy(gameObject);
         

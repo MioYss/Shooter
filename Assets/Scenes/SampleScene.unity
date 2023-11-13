@@ -571,6 +571,8 @@ MonoBehaviour:
   parent: {fileID: 803824554}
   ennemi: {fileID: 3860168721210943987, guid: 05ec8a40b06affc46b8c59fd78a1e3ec, type: 3}
   nombre_ennemi: 0
+  starting_point_x: -5
+  starting_point_y: 3
 --- !u!4 &803824554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6663064854076608963, guid: 371c59402bbb7e54283126ee0eab08d7, type: 3}
@@ -754,11 +756,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2555160251851851263, guid: 018dd976449b4574985b9bd033cd6aca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.53
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 2555160251851851263, guid: 018dd976449b4574985b9bd033cd6aca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 4.47
       objectReference: {fileID: 0}
     - target: {fileID: 2555160251851851263, guid: 018dd976449b4574985b9bd033cd6aca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -990,8 +992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9781110b9c051ae4ebb1a01542dfb5d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnOne: {fileID: 803824552}
-  spawnTwo: {fileID: 1272977981}
+  spawn_one: {fileID: 1272977981}
+  spawn_two: {fileID: 803824552}
 --- !u!4 &1136931773
 Transform:
   m_ObjectHideFlags: 0
@@ -1084,6 +1086,8 @@ MonoBehaviour:
   parent: {fileID: 1272977983}
   ennemi: {fileID: 6128441405271233860, guid: 380c184ecf7028c47902e62eb91c4e93, type: 3}
   nombre_ennemi: 0
+  starting_point_x: -6
+  starting_point_y: 2
 --- !u!4 &1272977983 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2555160251851851263, guid: 018dd976449b4574985b9bd033cd6aca, type: 3}

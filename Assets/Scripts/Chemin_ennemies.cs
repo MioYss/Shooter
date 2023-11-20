@@ -15,9 +15,11 @@ public class Chemin_ennemies : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        mon_chemin = FindAnyObjectByType<SplineContainer>();
-        spa.Container = mon_chemin;
-        spa.Play();
+        for ( int i = 0; i <= 6; i += 1) { 
+            mon_chemin = FindAnyObjectByType<SplineContainer>();
+            spa.Container = mon_chemin;
+            spa.Play();
+        }
     }
 
 }

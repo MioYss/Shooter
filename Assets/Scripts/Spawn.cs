@@ -20,9 +20,9 @@ public class Spawn : MonoBehaviour
 
     public void GenerateObject()
           {
-              for (int j = starting_point_y; j <= 4; j+=0)
+              for (int j = starting_point_y; j <= 4; j+=2)
               {
-                  for (int i = starting_point_x; i < 5; i+=0)
+                  for (int i = starting_point_x; i < 5; i+=2)
                   {
                         GameObject obj = Instantiate(ennemi, new Vector3(1 + (1.8f * i), 0.8f * j, 0), Quaternion.identity);
                         //obj.transform.SetParent(mon_chemin.transform);

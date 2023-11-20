@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4681168761532794810}
   - component: {fileID: 311150691524113331}
   - component: {fileID: 4283918871093695458}
+  - component: {fileID: 3040494947604833567}
   m_Layer: 0
   m_Name: ennemi01
   m_TagString: ennemi
@@ -181,3 +182,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
+  ennemie: {fileID: 0}
+  mon_chemin: {fileID: 0}
+  spa: {fileID: 3040494947604833567}
+--- !u!114 &3040494947604833567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128441405271233860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a074d529cf945029ef7cf40540c9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_LoopMode: 0
+  m_Method: 0
+  m_Duration: 1
+  m_MaxSpeed: 10
+  m_EasingMode: 0
+  m_AlignmentMode: 0
+  m_ObjectForwardAxis: 2
+  m_ObjectUpAxis: 1
+  m_StartOffset: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class Spawn : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Spawn : MonoBehaviour
     public int starting_point_x;
     public int starting_point_y;
 
+
+
     /*public void GenerateObject()
     {
         for (int i = 0; i < 3; i++)
@@ -17,11 +20,12 @@ public class Spawn : MonoBehaviour
 
     public void GenerateObject()
           {
-              for (int j = starting_point_y; j <= 4; j+=2)
+              for (int j = starting_point_y; j <= 4; j+=0)
               {
-                  for (int i = starting_point_x; i < 5; i+=2)
+                  for (int i = starting_point_x; i < 5; i+=0)
                   {
-                        Instantiate(ennemi, new Vector3(1 + (1.8f * i), 0.8f * j, 0), Quaternion.identity);
+                        GameObject obj = Instantiate(ennemi, new Vector3(1 + (1.8f * i), 0.8f * j, 0), Quaternion.identity);
+                        //obj.transform.SetParent(mon_chemin.transform);
                   }
               }
           }

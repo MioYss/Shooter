@@ -1,25 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class Chemin_ennemies : MonoBehaviour
 
 {
 
     public Transform parent;
-
+    public GameObject ennemie;
+    public SplineContainer mon_chemin;
+    public SplineAnimate spa;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        mon_chemin = FindAnyObjectByType<SplineContainer>();
+        spa.Container = mon_chemin;
+        spa.Play();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = Vector3.MoveTowards(transform.position, parent.transform.position, .03f);
-    }
-
 
 }

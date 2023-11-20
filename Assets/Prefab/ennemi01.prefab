@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8650566655662361808}
   - component: {fileID: 4681168761532794810}
   - component: {fileID: 311150691524113331}
-  - component: {fileID: 4283918871093695458}
   m_Layer: 0
   m_Name: ennemi01
   m_TagString: ennemi
@@ -168,16 +167,3 @@ MonoBehaviour:
   frequence_mouvement: 1
   distance_mouvement: 1
   "extr\xE9mit\xE9": 0
---- !u!114 &4283918871093695458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6128441405271233860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e13cbe61a0e1a84a98ae792dd34dc9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 0}

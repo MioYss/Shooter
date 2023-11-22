@@ -6,6 +6,7 @@ TagManager:
   tags:
   - player
   - ennemi
+  - limite
   layers:
   - Default
   - TransparentFX

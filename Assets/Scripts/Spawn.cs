@@ -12,17 +12,13 @@ public class Spawn : MonoBehaviour
     public SplineContainer[] splines;
 
     private float timer;
-    public float timeBetEnnemi = 1f;
-    public float ranomFactor = 0.5f;
+    public float time_bet_ennemi = 1f;
+    public float ranom_factor = 0.5f;
 
-    /*public void GenerateObject()
-    {
-        for (int i = 0; i < 3; i++)
-            Instantiate(ennemi, parent.position + Vector3.right * Random.Range(0f, 15f), parent.rotation);*/
 
     private void Start()
     {
-        timer = timeBetEnnemi;
+        timer = time_bet_ennemi;
     }
 
     private void Update()
@@ -31,16 +27,16 @@ public class Spawn : MonoBehaviour
         if(timer<=0)
         {
             GenerateObject();
-            timer = timeBetEnnemi + Random.Range(-ranomFactor, +ranomFactor);
+            timer = time_bet_ennemi + Random.Range(-ranom_factor, +ranom_factor);
         }
 
 
     }
     public void GenerateObject()
     {
-        Chemin_ennemies cheminEnemi = Instantiate(spawn_ennemies[Random.Range(0,spawn_ennemies.Length)].GetComponent<Chemin_ennemies>());
-        SplineContainer splineADonnerAuNouveauNe = splines[Random.Range(0, splines.Length)];
-        cheminEnemi.OnSummon(splineADonnerAuNouveauNe);
+        Chemin_ennemies chemin_ennemi = Instantiate(spawn_ennemies[Random.Range(0,spawn_ennemies.Length)].GetComponent<Chemin_ennemies>());
+        SplineContainer spline_a_donner_au_nouveau_ne = splines[Random.Range(0, splines.Length)];
+        chemin_ennemi.OnSummon(spline_a_donner_au_nouveau_ne);
     }
     
 }

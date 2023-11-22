@@ -13,9 +13,9 @@ public class Chemin_ennemies : MonoBehaviour
     public SplineAnimate spa;
 
 
-    public void OnSummon(SplineContainer splineToFollow)
+    public void OnSummon(SplineContainer spline_to_follow)
     {
-        mon_chemin = splineToFollow;
+        mon_chemin = spline_to_follow;
 
         spa.Container = mon_chemin;
         spa.Play();

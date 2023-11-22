@@ -27,10 +27,11 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "ennemi")
         {
             Instantiate(explosion, parent.position +Vector3.right * 0.5f, parent.rotation);
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
-        
+
+
     }
 
 }

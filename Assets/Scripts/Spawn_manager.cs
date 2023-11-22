@@ -20,6 +20,7 @@ public class Spawn_manager : MonoBehaviour
         if(FindObjectOfType<Drop_ennemies>() == false)
         {
             spawn_one.GenerateObject();
+            print("coucou");
             spawn_two.GenerateObject();
         }
     }

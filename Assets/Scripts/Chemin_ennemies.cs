@@ -12,14 +12,13 @@ public class Chemin_ennemies : MonoBehaviour
     public SplineContainer mon_chemin;
     public SplineAnimate spa;
 
-    // Start is called before the first frame update
-    void Awake()
+
+    public void OnSummon(SplineContainer splineToFollow)
     {
-        for ( int i = 0; i <= 6; i += 1) { 
-            mon_chemin = FindAnyObjectByType<SplineContainer>();
-            spa.Container = mon_chemin;
-            spa.Play();
-        }
+        mon_chemin = splineToFollow;
+
+        spa.Container = mon_chemin;
+        spa.Play();
     }
 
 }

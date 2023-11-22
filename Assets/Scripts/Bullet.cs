@@ -22,10 +22,16 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        /*
         nombre_ennemi_ref.nombre_ennemi--;
         score_ref.score_joueur++;
+        */
+
         if (collision.gameObject.tag == "ennemi")
-        {
+        {            
+            Spawn spawn= FindObjectOfType<Spawn>();
+            spawn.nombre_ennemi--;
+
             Instantiate(explosion, parent.position +Vector3.right * 0.5f, parent.rotation);
             Destroy(collision.gameObject);
             Destroy(gameObject);
